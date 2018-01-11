@@ -4,16 +4,24 @@ Simulations for testing Multispectral Compressive Imaging Strategies
 
 This Matlab package comes as supplemental material for the paper 
 K. Degraux, V. Cambareri, Bert Geelen, Laurent Jacques, Gauthier Lafruit,
-Multispectral Compressive Imaging Strategies using Fabry-Pérot Filtered 
+Multispectral Compressive Imaging Strategies using Fabry-PÃ©rot Filtered 
 Sensors, Submitted to IEEE Transactions on Computational Imaging, 2018
 
-The CAVE dataset can be downloaded at
-http://www.cs.columbia.edu/CAVE/databases/multispectral/
 
-Unzip the toolboxes (spot-master and tight_subplot).
-Launch hsics_setup, then hsics_main(jobid) with jobid between 0 and 705 to 
-reproduce results presented in the paper. For more information on the jobid 
-and the output files, see hsics_jobid.
+To generate the figures from the paper:
+- Unzip the toolboxes (spot-master and tight_subplot).
+- Launch hsics_setup
+- Launch hsics_psnr_figure
+- Launch hsics_patches_figure
+
+To reproduce, from the data, the results presented in the paper:
+- Unzip images.7z in the root folder.
+- Download the CAVE dataset at
+http://www.cs.columbia.edu/CAVE/databases/multispectral/
+- Unzip it in the images folder.
+- Unzip the toolboxes (spot-master and tight_subplot).
+- Launch hsics_setup, then hsics_main(jobid) with jobid between 0 and 705.
+For more information on the jobid  and the output files, see hsics_jobid.
 
 The function HSinspector is useful to display and explore 3D arrays.
 
