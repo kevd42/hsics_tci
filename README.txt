@@ -9,30 +9,21 @@ Multispectral Compressive Imaging Strategies using Fabry-Pérot Filtered
 Sensors, Submitted to IEEE Transactions on Computational Imaging, 2018
 It can be accessed and downloaded at https://github.com/kevd42/hsics_tci
 
-### Size
-Total size: 108.3 MB
-
-### Packing list: 
-code.zip 1.6MB
-images.zip 4MB
-matfiles.zip 102.7MB
-
-
 ### Instructions:
 To generate the figures from the paper:
-- Unzip code.zip
-- Unzip matfiles.zip
-- Unzip the toolboxes (spot-master and tight_subplot).
+
+- Unzip (if necessary) the toolboxes (spot-master and tight_subplot).
 - Launch hsics_setup
-- Launch hsics_psnr_figure
-- Launch hsics_patches_figure
+- Launch hsics_patches_figure('matfiles','leaves') (Fig. 5)
+- Launch hsics_psnr_figure (Fig. 6)
+- Launch hsics_patches_figure (Fig. 7)
 
 To reproduce, from the data, the results presented in the paper:
-- Unzip images.7z (or images.zip) in the root folder.
+- Untar images.tar.gz (or images.7z) in the root folder.
 - Download the CAVE dataset at
 http://www.cs.columbia.edu/CAVE/databases/multispectral/
 - Unzip it in the images folder.
-- Unzip the toolboxes (spot-master and tight_subplot).
+- Unzip (if necessary) the toolboxes (spot-master and tight_subplot).
 - Launch hsics_setup, then hsics_main(jobid) with jobid between 0 and 705.
 For more information on the jobid  and the output files, see hsics_jobid.
 
